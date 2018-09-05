@@ -8,7 +8,7 @@
   vars:
     consul_bind_interface: 'enp0s8'
     consul_services: []
-    consul_ui: false
+    consul_ui: true
     pri_domain_name: 'test.vagrant.local'
   roles:
     - role: ansible-consul
