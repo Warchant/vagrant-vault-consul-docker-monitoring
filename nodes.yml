@@ -12,38 +12,6 @@
     - ip: 192.168.250.10
       auto_config: true
       method: 'static'
-  mem: 1024
+  mem: 4096
   provision: true
   vcpu: 2
-
-- name: 'node1'
-  ansible_groups:
-    - 'consul_all'
-    - 'consul_clients'
-    - 'docker_hosts'
-    - 'docker_swarm_workers'
-  box: 'mrlesmithjr/xenial64'
-  desktop: false
-  interfaces:
-    - ip: 192.168.250.11
-      auto_config: true
-      method: 'static'
-  mem: 512
-  provision: true
-  vcpu: 1
-
-- name: 'node2'
-  ansible_groups:
-    - 'consul_all'
-    - 'consul_clients'
-    - 'docker_hosts'
-    - 'docker_swarm_workers'
-  box: 'mrlesmithjr/xenial64'
-  desktop: false
-  interfaces:
-    - ip: 192.168.250.12
-      auto_config: true
-      method: 'static'
-  mem: 512
-  provision: true
-  vcpu: 1
